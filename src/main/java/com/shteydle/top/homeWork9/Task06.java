@@ -35,6 +35,11 @@ public class Task06 {
                 i++;
                 j--;
                 flag = true;
+            } else if (arr2[arr2.length - 1 - j].equals(")") && arr2[arr2.length - 2 - j].equals("(") || arr2[arr2.length - 1 - j].equals("]") && arr2[arr2.length - 2 - j].equals("[")) {
+                i--;
+                j++;
+                flag = true;
+
             } else if (arr2[i].equals("(") && arr2[arr2.length - 1 - j].equals(")") || arr2[i].equals("[") && arr2[arr2.length - 1 - j].equals("]")){
                 flag = true;
             } else if (arr2[i].equals("(") && arr2[arr2.length - 1 - j].equals("]") || arr2[i].equals("[") && arr2[arr2.length - 1 - j].equals(")")) {
